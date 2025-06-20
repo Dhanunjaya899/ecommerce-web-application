@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Discount</th>
+            <th>Price</th>
+            <th>MRP</th>
+            <th>Color</th>
+            <th>MOdel</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>description</th>
+        </tr>
+        {% for i in detail %}
+        <tr>
+            <td>{{ i.title }}</td>
+            <td>{{ i.discount_per }}</td>
+            <td>{{ i.price }}</td>
+            <td>{{ i.mrp_price }}</td>
+            <td>{{ i.color }}</td>
+            <td>{{ i.model_item }}</td>
+            <td>{{ i.category }}</td>
+            <td>{{ i.image }}</td>
+            <td>{{ i.description }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+
+</html>
